@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <GetTodo2></GetTodo2>
+    <CurrentTodos></CurrentTodos>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import GetTodo2 from '@/components/GetTodo2.vue'
+import CurrentTodos from '@/components/CurrentTodos.vue'
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    GetTodo2,
+    CurrentTodos,
   }
 }
 </script>
+
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+}
+</style>
